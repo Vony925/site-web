@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../style/hotel.css">
+</head>
+<body>
+     <div class="containers">
+      <!-- <div class="box">
+               <img src="../image/Fianarantsoa/Lac-Hotel-a-Fianarantsoa.jpg" alt="">
+               
+          </div>
+          <div class="box">
+               <img src="../image/Fianarantsoa/Lac-hotel-sahambavy-6-1108x600.jpg" alt="">
+          </div>
+          <div class="box">
+               <img src="../image/Fianarantsoa/l-hotel-restaurant-zomatel.jpg" alt="">
+          </div>
+          <div class="box">
+               <img src="../image/Fianarantsoa/maxresdefault (1).jpg" alt="">
+
+          </div>
+          <div class="box">
+               <img src="../image/Fianarantsoa/86a1dd8b52503f3e1af54385f0da9a434df2c817.jpg" alt="">
+          </div> -->
+     </div>
+
+     <script>
+          const containers = document.querySelector('.containers')
+          const images = ['86a1dd8b52503f3e1af54385f0da9a434df2c817.jpg','maxresdefault (1).jpg','l-hotel-restaurant-zomatel.jpg','Lac-Hotel-a-Fianarantsoa.jpg']
+          // images.forEach((image, index) => {
+          //      const box = document.createElement('div')
+          //      const img = document.createElement('img')
+          //      box.classList.add('box')
+          //      img.src = `../image/Fianarantsoa/${image}`
+          //      box.appendChild(img)
+          //      containers.append(box)
+          // })
+
+          for (let i = 0; i < images.length; i++) {
+               const box = document.createElement('div')
+               const img = document.createElement('img')
+               box.classList.add('box')
+               img.src = `../image/Fianarantsoa/${images[i]}`
+               box.appendChild(img)
+               containers.append(box)
+          }
+     </script>
+     
+
+</body>
+</html>

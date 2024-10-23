@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Ville</title>
+     <link rel="stylesheet" href="../style/hotel.css">
+</head>
+<body>
+    <div id="containers"></div> 
+    <script>
+          const containers = document.getElementById('containers')
+          containers.classList.add('containers')
+          const tableau = [
+               'cathedrale1g.jpg',
+               'fianarantsoa-capitale.jpg',
+               'la-vieille-ville-de-fianarantsoa-madagascar-highlands-cn40ff.jpg',
+               'old-town-fianarantsoa-madagascar-highlands-260nw-99534083.jpg',
+               'pt29276.1240545.w430.jpg',
+               'TRANSPORT-FERROVIAIRE-–-Reprise-officielle-de-la-ligne-FCE-entre-Fianarantsoa-et-Manapatrana.jpg'
+          ]
+
+          tableau.forEach(image => {
+               const box = document.createElement('div')
+               const img = document.createElement('img')
+               
+               box.classList.add('box')
+               img.src = `../image/Fianarantsoa/${image}`
+               
+               box.appendChild(img)
+               containers.appendChild(box)
+          })
+    </script>
+</body>
+</html>
